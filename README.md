@@ -22,7 +22,7 @@ python xor_encryptor.py raw.txt > xor_shellcode.txt
 ## Add the crypted shellcode on main.cpp
 Now that you have the encrypted shellcode you need to add it on the main.cpp file just like this:
 ```
-char b[] = { /*xor_shellcode*/};
+char b[] = /*xor_shellcode*/
 ```
 
 ## Compile the main.cpp file
