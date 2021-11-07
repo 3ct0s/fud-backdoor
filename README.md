@@ -31,3 +31,8 @@ https://cutt.ly/BBOXP797
 
 ## Execute the backdoor
 Now you can execute the backdoor and enjoy the metepreter shell
+
+
+## DISCLAIMER
+
+I am not responsible for any of your actions. This GitHub repository is made for educational purposes only!!!
