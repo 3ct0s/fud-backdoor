@@ -32,7 +32,7 @@ https://cutt.ly/BBOXP797
 ## Execute the backdoor
 Now you can execute the backdoor and enjoy the metepreter shell
 
-## What is it gets detected?
+## What if it gets detected?
 
 At some point, the anti viruses will be able to detect this backdoor. Here are some things you can do to make it undetectable again. 
 
