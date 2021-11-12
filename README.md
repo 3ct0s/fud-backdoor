@@ -32,6 +32,13 @@ https://cutt.ly/BBOXP797
 ## Execute the backdoor
 Now you can execute the backdoor and enjoy the metepreter shell
 
+## What is it gets detected?
+
+At some point, the anti viruses will be able to detect this backdoor. Here are some things you can do to make it undetectable again. 
+
+You can try to change the payload type protocol and make it http or https and make sure to use another port, add gibberish C++ code on the main.cpp file and you can also try playing with the SSL certificate of the session. Here is an article that covers this: https://www.darkoperator.com/blog/2015/6/14/tip-meterpreter-ssl-certificate-validation
+
+If this still doesn't work, I can't think of another way to make the connection undetectable since this is a meterpreter shell and they get detected quite easily
 
 ## DISCLAIMER
 
