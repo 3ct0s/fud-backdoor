@@ -22,11 +22,13 @@ python xor_encryptor.py raw.txt > xor_shellcode.txt
 ## Add a decryption password
 Add a password to both the main.cpp file and the xor_encryptor.py. It has to be the same password otherwise it will not work.
 
+- main.cpp:
 ```cpp
   // replace the key variable with your own password or key
   char key[9] = "password";
   size_t key_len = strlen(key);
-
+```
+- xor_encryptor.py:
 ```python
 # key should be similar to the one in the C++ file(main.cpp). Please
 # endeavour to change it!!
